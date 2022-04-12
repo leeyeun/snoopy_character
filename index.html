@@ -5,109 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snoopy</title>
-    <style>
-        body{
-            background-color: blanchedalmond;
-        }
-        .snoopy{
-            position: relative;
-            top: 100px;
-            margin: 50px auto;
-            width: 600px;
-            height: 600px;
-            background-color: bisque;
-            
-        }
-        .head{
-            transform: all;
-        }
-        .head .head_left{
-            position: absolute;
-            width: 220px;
-            height: 240px;
-            top: 100px;
-            left: 110px;
-            border-radius: 45% 55% 62% 38% / 41% 51% 49% 59% ;
-            background-color: white;
-            z-index: 10;
-        }
-        .head .head_right{
-            position: absolute;
-            width: 215px;
-            height: 180px;
-            top: 150px;
-            left: 200px;
-            border-radius: 44% 56% 75% 25% / 11% 50% 42% 89%  ;
-            background-color: white;
-            z-index: 10;
-        }
-        .head .ear{
-            position: absolute;
-            transform: rotate(20reg);
-            width: 135px;
-            height: 200px;
-            background-color: black;
-            top: 150px;
-            left: 90px;
-            border-radius: 51% 49% 55% 45% / 66% 67% 33% 34% ;
-            z-index: 10;
-        }
-        .head .ear .inner_ear{
-
-        }
-        .head .eyebrow{
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-top: 5px solid black;
-            top: 125px;
-            left: 270px;
-            z-index: 100;
-            /* border-radius: 5px; */
-            border-width: 10px;
-            border-radius: 80px / 40px;
-            transform: rotate(10reg);
-        }
-        .eye{
-            width: 30px;
-            height: 10px;
-            background-color: black;
-            border-radius: 25px;
-            transform: rotateX(90reg);
-        }
-        .nose{
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: black;
-            top: 250px;
-            right: 163px;
-            z-index: 9;
-        }
-        .head::before,
-        .head::after{
-            
-        }
-        .head:after {
-        
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="snoopy">
         <div class="head">
             <div class="head_left"></div>
             <div class="head_right"></div>
-            <div class="ear">
-                <div class="inner_ear"></div>
-            </div>
-            <div class="eyebrow"></div>
+            <div class="ear"></div>
+            <div class="inner_ear"></div>
+            <!-- <div class="eyebrow"></div>
+            <div class="eyebrow_hidden"></div> -->
             <div class="eye"></div>
             <div class="nose"></div>
+            <div class="mouse"></div>
+            <div class="mouse_hidden"></div>
+            <div class="head_hidden"></div>
+            <div class="head_hidden_two"></div>
+            <div class="head_hidden_three"></div>
+            <div class="head_hidden_four"></div>
         </div>
-        <div class="face">
-
+        <div class="snoopy_body">
+            <div class="neck"></div>
+            <div class="body_body"></div>
+            <div class="leg"></div>
+            <div class="foot_right"></div>
+            <div class="foot_left"></div>
+            <div class="foot_hidden"></div>
         </div>
     </div>
 </body>
