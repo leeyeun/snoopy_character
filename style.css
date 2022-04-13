@@ -1,3 +1,53 @@
+/* animation */
+@keyframes ear{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(6deg);
+        
+    }
+}
+@keyframes 왼쪽손가락{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        /* transform: rotate(-40deg); */
+        width: 32px;
+        height: 33px;
+    }
+}
+@keyframes 중앙손가락{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        /* transform: rotate(-40deg); */
+        width: 32px;
+        height: 33px;
+    }
+}
+@keyframes 오른쪽손가락{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        /* transform: rotate(-40deg); */
+        width: 31px;
+        height: 31px;
+    }
+}
+@keyframes 길어진코{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+        
+    }
+}
 body{
     background-color: blanchedalmond;
 }
@@ -40,12 +90,9 @@ body{
     border-radius: 44% 56% 75% 25% / 11% 50% 42% 89%  ;
     background-color: white;
     z-index: 10;
-    /* border: 5px solid black; */
     border: 5px solid black;
 }
-@keyframes ear{
 
-}
 .head .ear{
     box-sizing: border-box;
     position: absolute;
@@ -57,7 +104,13 @@ body{
     border-radius: 51% 49% 55% 45% / 66% 67% 33% 34% ;
     z-index: 10;
     border: 5px solid black;
+    animation: ear 1s infinite alternate;
 }
+/* .ear:hover{
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-name: ear;
+} */
 .head .inner_ear{
     position: absolute;
     width: 105px;
@@ -67,6 +120,7 @@ body{
     left: 15px;
     border-radius: 51% 49% 55% 45% / 66% 67% 33% 34% ;
     z-index: 20;
+    animation: ear 1s infinite alternate;
 }
 .head .eyebrow{
     position: absolute;
@@ -110,6 +164,7 @@ body{
     top: 150px;
     right: 0;
     z-index: 9;
+    animation: 1s 길어진코 infinite alternate;
 }
 .head .mouse{
     position: absolute;
@@ -119,6 +174,18 @@ body{
     bottom: 5px;
     right: 115px;
     z-index: 100;
+    border-radius: 0% 100% 0% 100% / 0% 0% 100% 100% ;
+}
+.mouse::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 45px;
+    background-color: white;
+    bottom: 0px;
+    left: 2px;
+    z-index: 101;
     border-radius: 0% 100% 0% 100% / 0% 0% 100% 100% ;
 }
 .head .mouse_hidden{
@@ -310,6 +377,7 @@ body{
     top: 150px;
     left: 55px;
     border-radius: 45%;
+    animation: 1s 왼쪽손가락 infinite alternate;
 }
 .snoopy_body .hand_two{
     box-sizing: border-box;
@@ -321,6 +389,7 @@ body{
     top: 160px;
     left: 75px;
     border-radius: 50% 37% 47% 32% / 63% 67% 36% 36%;
+    animation: 1s 중앙손가락 infinite alternate;
 }
 .snoopy_body .hand_three{
     box-sizing: border-box;
@@ -332,6 +401,7 @@ body{
     top: 156px;
     left: 97px;
     border-radius: 50% 37% 68% 32% / 63% 29% 72% 36% ;
+    animation: 오른쪽손가락 1s infinite alternate;
 }
 .snoopy_body .hand_hidden{
     background-color: white;
