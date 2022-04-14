@@ -48,6 +48,24 @@
         
     }
 }
+@keyframes 왼쪽발{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-8deg);
+        
+    }
+}
+@keyframes 오른쪽발{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(8deg);
+        
+    }
+}
 body{
     background-color: blanchedalmond;
 }
@@ -275,24 +293,14 @@ body{
     top: 80px;
     background-color: white;
     border-radius: 42% 63% 19% 33% / 58% 100% 23% 40% ;
+    /* animation: 1s 왼쪽발 infinite alternate; */
 }
-.snoopy_body .leg{
-    box-sizing: border-box;
-    border-top: 5px solid black;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 110px;
-    bottom: 80px;
-    transform: rotate(10deg);
+.snoopy_body .foot_left:hover{
+    animation: 1s 왼쪽발 infinite alternate;
 }
-.snoopy_body .foot_hidden{
-    position: absolute;
-    width: 35px;
-    height: 37px;
-    background-color: white;
-    top: 188px;
-    left: 150px;
+
+.snoopy_body .foot_right:hover{
+    animation: 1s 오른쪽발 infinite alternate;
 }
 .snoopy_body .foot_right{
     box-sizing: border-box;
@@ -304,6 +312,7 @@ body{
     top: 70px;
     background-color: white;
     border-radius: 42% 63% 19% 33% / 58% 100% 23% 40% ;
+    /* animation: 1s 오른쪽발 infinite alternate; */
 }
 .snoopy_body .foot_left_line_one{
     position: absolute;
@@ -344,6 +353,24 @@ body{
     top: 130px;
     right: 5px;
     z-index: 100;
+}
+.snoopy_body .leg{
+    box-sizing: border-box;
+    border-top: 5px solid black;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 110px;
+    bottom: 80px;
+    transform: rotate(10deg);
+}
+.snoopy_body .foot_hidden{
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    background-color: white;
+    top: 188px;
+    left: 150px;
 }
 .head .neck{
     box-sizing: border-box;
