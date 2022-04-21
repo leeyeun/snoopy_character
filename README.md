@@ -5,4 +5,4 @@
 ##### URL : https://leeyeun.github.io/snoopy_character/
 
 
-snoopy.gif
+
